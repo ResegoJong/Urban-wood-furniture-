@@ -17,15 +17,26 @@
     </nav>
 </header>
 
-<div class="container">
-    <form onsubmit="return validateForm()">
-
-        <input type="text" id="name" placeholder="Your Name">
-        <input type="email" id="email" placeholder="Your Email">
-        <textarea id="message" placeholder="Your Message"></textarea>
-
-        <button type="submit">Send</button>
+<div class="contact-page-container">
+  
+  <div class="contact-card">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="4" required></textarea>
+      <button type="submit">Send</button>
     </form>
+  </div>
+
+  <div id="successModal" class="modal-overlay">
+    <div class="modal-box">
+      <h3>resegojong.github.io says</h3>
+      <p>Message sent successfully!</p>
+      <button id="closeModalBtn">OK</button>
+    </div>
+  </div>
+
 </div>
 
 <script src="script.js"></script>
