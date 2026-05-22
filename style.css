@@ -93,6 +93,13 @@ nav a:hover {
     border-radius: 8px;
 }
 
+.container h2 {
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-align: center; /* 👈 This line will perfectly center your heading */
+}
 footer {
     /* Made the footer slightly transparent to match the header style */
     background: rgba(62, 47, 47, 0.85);
