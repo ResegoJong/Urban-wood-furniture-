@@ -21,19 +21,19 @@
   
   <div class="contact-card">
     <h2>Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Message" rows="4" required></textarea>
+    <form id="contactForm" onsubmit="return validateForm(event)">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Message" rows="4" required></textarea>
       <button type="submit">Send</button>
     </form>
   </div>
 
-  <div id="successModal" class="modal-overlay">
-    <div class="modal-box">
+  <div id="customAlert" class="custom-alert-overlay">
+    <div class="alert-box">
       <h3>resegojong.github.io says</h3>
       <p>Message sent successfully!</p>
-      <button id="closeModalBtn">OK</button>
+      <button id="alertOkBtn" type="button">OK</button>
     </div>
   </div>
 
