@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* ─── BACKGROUND IMAGE APPLIED TO WHOLE PAGE ─── */
+
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Keeps the background image fixed in place while you scroll */
+    background-attachment: fixed;
     color: #333;
 }
 
@@ -31,7 +31,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* ─── HERO AREA (TRANSPARENT) ─── */
 .hero {
     background: transparent; 
     height: 300px; 
@@ -46,27 +45,26 @@ nav a:hover {
     padding: 0 20px;
 }
 
-/* ─── HORIZONTAL LAYOUT CONTAINER FIXED ─── */
 .container {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
     
-    display: flex;          /* Activates horizontal layout */
-    flex-direction: row;    /* Rows cards left-to-right */
-    flex-wrap: wrap;        /* Moves cards to the next line smoothly on smaller screens */
-    gap: 25px;              /* Clean spacing between rows and columns */
-    justify-content: center;/* Centers the cards on the screen horizontally */
+    display: flex;        
+    flex-direction: row;   
+    flex-wrap: wrap;      
+    gap: 25px;             
+    justify-content: center;
 }
 
-/* Styled the main section headings and centered it */
+
 .container h2, .intro-text {
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
     margin-bottom: 30px;
     font-size: 24px;
     text-align: center; 
-    width: 100%;            /* Makes sure the heading stays on its own full row above cards */
+    width: 100%;           
 }
 
 .intro-text {
@@ -74,18 +72,18 @@ nav a:hover {
     font-size: 1.1rem;
 }
 
-/* ─── PRODUCT/GALLERY CARDS ─── */
+
 .card {
     background: white;
     padding: 15px;
     margin: 0;
-    width: 240px;           /* Clean, standard horizontal card width */
+    width: 240px;          
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
     transition: transform 0.2s ease;
     color: #333; 
     
-    /* These three lines keep the text stacked cleanly beneath the image inside the card */
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,9 +100,8 @@ nav a:hover {
     border-radius: 8px;
 }
 
-/* Name tag styling directly underneath the image inside the card */
 .card p {
-    margin: 15px 0 0 0;     /* Top margin pushes the text down below the image */
+    margin: 15px 0 0 0;     
     font-weight: bold;
     font-size: 1.1rem;
     color: #333;
@@ -140,8 +137,6 @@ button {
 button:hover {
     background: #523e3e;
 }
-
-/* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
